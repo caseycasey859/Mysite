@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10단계(본문Area-leftnenuZone)</title>
+    <title>10단계(본문Area-contentsZone)</title>
     <script src="js/jquery.js"></script>
     <style>
         *{margin:0; padding: 0;}
@@ -283,48 +283,49 @@
                 max-width: 1200px;
                 margin: 0 auto;
                 overflow: hidden;
-                height:300px;
 
             }
             #leftmenuZone{
                 float: left;
                 width: 20%;
-                height: 70%;
 
             }
             #contentsZone{
                 float: right;
                 width: 75%;
-                height: 70%;
             }
         </style>
         <div id="bodyArea">
             <!-- 왼쪽메뉴Zone시작 -->
-             <style>
+            <style>
                 /* #left_menu_box{
-                    text-align:center;
+                    text-align: center;
                 } */
-                 .left_menu_title{
+                .left_menu_title{
                     font-size:32px;
-                    font-weight:800;
+                    font-weight: 800;
+                    text-align:center;
                     display:block;
-                    /* text-align:center; */
-                    display:block;
-                 }
-                 .left-menu{
+                }
+                .left_menu{
                     font-size:20px;
                     color:gray;
-                    padding-left:15px;
+                    padding-left: 15px;
+                }
 
-                 }
-
-                 .left_banner_title{
+                .left_banner_title{
                     font-size:32px;
-                    font: weight 800;
+                    font-weight: 800;
                     text-align:center;
-                 }
-
-             </style>
+                    display:block;
+                }
+                .left_banner{
+                    font-size:20px;
+                    color:gray;
+                    padding-left: 15px;
+                    text-align: center;
+                }
+            </style>
             <div id="leftmenuZone">
                 <div id="left_menu_box">
                     <span class="left_menu_title">특별함</span>
@@ -333,15 +334,77 @@
                     </ul>
                 </div>
                 <div id="left_banner_box">
-                    <span class="left_vanner_title">고객센터</span>
+                    <span class="left_banner_title">고객센터</span>
                     <ul>
-                        li
+                        <li class="left_banner">010-1234-1515</li>
+                        <li class="left_banner">농혐 000-00-00000<br>홍길동</li>
                     </ul>
                 </div>
             </div>
             <!-- 왼쪽메뉴Zone끝 -->
             <!-- 내용Zone시작 -->
-            <div id="contentsZone"></div>
+            <style>
+                .contents_title{
+                    font-size: 32px;
+                    padding: 10px 30px;
+                    border-bottom: 5px solid gray;
+                }
+                .album{
+                    border-top:1px solid green;
+                }
+                .album td{
+                    padding : 5px;
+                    border-bottom: 1px solid green;
+                }
+            </style>
+            <div id="contentsZone">
+                <div class="contents_title">특별함</div>
+                <div id="article" class="contents">
+                    <h3>사계절 낭만이 있는 곳에서 행복한 추억을 많이 만들어 가세요</h3>
+                    <table class="album" border="0" style="width: 100%;">
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="img/album_01.jpg" width="160" alt="">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    비가 오나 눈이 오나 걱정없는 실내 바비큐장에서 사계절 편안하게 드세요~본 내용은 샘플로 작성되었으며 추후에 관리자가 펜션에 맞게 직접 내용을 등록하실 수 있습니다.  감사합니다.                                    
+                                    <div align="right">[<font style="color:#878787;font-size:12px;">작성일자 : 2015-12-27</font>, <font style="color:#878787;font-size:12px;">조회수 : 51</font>]</div>                         
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="img/album_01.jpg" width="160" alt="">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    비가 오나 눈이 오나 걱정없는 실내 바비큐장에서 사계절 편안하게 드세요~본 내용은 샘플로 작성되었으며 추후에 관리자가 펜션에 맞게 직접 내용을 등록하실 수 있습니다.  감사합니다.                                    
+                                    <div align="right">[<font style="color:#878787;font-size:12px;">작성일자 : 2015-12-27</font>, <font style="color:#878787;font-size:12px;">조회수 : 51</font>]</div>                         
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="img/album_01.jpg" width="160" alt="">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    비가 오나 눈이 오나 걱정없는 실내 바비큐장에서 사계절 편안하게 드세요~본 내용은 샘플로 작성되었으며 추후에 관리자가 펜션에 맞게 직접 내용을 등록하실 수 있습니다.  감사합니다.                                    
+                                    <div align="right">[<font style="color:#878787;font-size:12px;">작성일자 : 2015-12-27</font>, <font style="color:#878787;font-size:12px;">조회수 : 51</font>]</div>                         
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
             <!-- 내용Zone끝 -->
         </div>
         <!-- 본문Area끝 -->
@@ -361,4 +424,3 @@
     
 </body>
 </html>
-
