@@ -1,3 +1,24 @@
+사이트주소 : <http://daum.net/>
+
+.[Google](https://google.com, "google Link").
+.[이름](http://naver.com,"튤립").
+
+.[link keyword].[id]
+
+[id]: URL "Optional Title here"
+
+//code
+Link: .[Google].[googlelink].
+.[googlelink]: https://naver.com "Go google"
+
+Link: .[naver][googlelink].
+
+[googlelink]: https://naver.com "Go google"
+
+.[daum].[addr]
+
+.[addr]: https://daum.net "다음"
+
 수평선
 --------------------
 수평선
